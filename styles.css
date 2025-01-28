@@ -1,0 +1,907 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fbeec1;
+    padding: 15px 30px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.signup-btn {
+    background: #114b5f;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: url('hero-image.jpg') no-repeat center/cover;
+    padding: 100px 20px;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero .btn {
+    background: #ff7f50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background: #fff;
+}
+
+.about-content {
+    max-width: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Projects Section */
+.projects {
+    background: #e3f2fd;
+    padding: 50px;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Donations Breakdown */
+.donations {
+    padding: 50px;
+    text-align: center;
+    background: #fff;
+}
+
+/* Current Projects */
+.current-projects {
+    padding: 50px;
+    background: #ffcc80;
+    text-align: center;
+}
+
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: #114b5f;
+    color: white;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer-links ul, .footer-connect ul {
+    list-style: none;
+}
+
+.footer-subscribe input {
+    padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.footer-subscribe button {
+    background: #ff7f50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Mission Section */
+.mission-section {
+    background: #FAF3DC;
+    padding: 60px 5%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.mission-text {
+    flex: 1;
+}
+
+.mission-text h2 {
+    font-size: 24px;
+    color: #2c2c2c;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.mission-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #4a4a4a;
+}
+
+.mission-image {
+    flex: 1;
+}
+
+.mission-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Mission Goals */
+.mission-goals {
+    padding: 50px 5%;
+    background: #ffffff;
+    text-align: center;
+}
+
+.mission-goals h2 {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.goals-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.goal-card {
+    flex: 1;
+    min-width: 280px;
+    background: #FAF3DC;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.goal-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.goal-card p {
+    font-size: 14px;
+    color: #4a4a4a;
+}
+
+/* Footer */
+footer {
+    background: #f8e9c4;
+    padding: 40px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c2c2c;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    flex: 1;
+}
+
+.footer-links div h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2c2c2c;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: 14px;
+}
+
+.footer-subscribe {
+    max-width: 300px;
+    flex: 1;
+}
+
+.footer-subscribe h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c2c2c;
+    margin-bottom: 10px;
+}
+
+.footer-subscribe form {
+    display: flex;
+    border: 1px solid #2c2c2c;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.footer-subscribe input {
+    padding: 10px;
+    border: none;
+    flex: 1;
+    font-size: 14px;
+}
+
+.footer-subscribe button {
+    background: #002b36;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.footer-subscribe button:hover {
+    background: #005b75;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+/* cameraroll */
+/* Camera Roll Page Styles */
+.camera-roll {
+    background: #A8C8C8;
+    padding: 60px 5%;
+    text-align: center;
+}
+
+.camera-roll h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Contribution Section */
+.contribution {
+    background: #D9A05B;
+    text-align: center;
+    padding: 60px 5%;
+}
+
+.contribution h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.volunteer-btn, .donate-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.volunteer-btn {
+    background: #ffffff;
+    color: #333;
+    border: 2px solid #333;
+}
+
+.volunteer-btn:hover {
+    background: #333;
+    color: white;
+}
+
+.donate-btn {
+    background: #002b36;
+    color: white;
+}
+
+.donate-btn:hover {
+    background: #005b75;
+}
+
+/* Footer Styles */
+footer {
+    background: #FAEBC8;
+    padding: 40px 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #2c2c2c;
+}
+
+.footer-subscribe form {
+    display: flex;
+    border: 1px solid #2c2c2c;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.footer-subscribe input {
+    padding: 10px;
+    flex: 1;
+    border: none;
+}
+
+.footer-subscribe button {
+    background: #002b36;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+/* Donate Section */
+.donate {
+    background: #B2D8D8;
+    padding: 50px;
+}
+
+.donate-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.donate-text {
+    flex: 1;
+}
+
+.donate-text h1 {
+    font-size: 2.5rem;
+    color: #063852;
+}
+
+.donate-text p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+.donate-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #FFB400;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.donate-image {
+    flex: 1;
+    text-align: center;
+}
+
+.donate-image img {
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+/* Contribution Section */
+.contribution {
+    padding: 50px;
+    text-align: center;
+    background: #F0F0F0;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    border: none;
+    background: #063852;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* CTA Section */
+.cta {
+    background: url('images/school.jpg') center/cover no-repeat;
+    padding: 60px;
+    text-align: center;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.volunteer-btn, .donate-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.volunteer-btn {
+    background: #FFB400;
+    color: white;
+}
+
+.donate-btn {
+    background: #063852;
+    color: white;
+}
+
+/* Footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: #F9E4B7;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+}
+
+.subscribe input {
+    padding: 8px;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.subscribe button {
+    padding: 8px 12px;
+    background: #063852;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .donate-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .donate-image img {
+        width: 100%;
+    }
+
+    .tabs {
+        flex-direction: column;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+/* Impact Section */
+.impact {
+    background: #ffffff;
+    padding: 50px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.impact h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #063852;
+    margin-bottom: 40px;
+}
+
+.project {
+    background: #F8F1E9;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.project h2 {
+    font-size: 1.8rem;
+    color: #063852;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    color: #FFB400;
+    margin-bottom: 15px;
+}
+
+.project p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* CTA Section */
+.cta {
+    background: url('images/school.jpg') center/cover no-repeat;
+    padding: 60px;
+    text-align: center;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.volunteer-btn, .donate-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.volunteer-btn {
+    background: #FFB400;
+    color: white;
+}
+
+.donate-btn {
+    background: #063852;
+    color: white;
+}
+
+/* Footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: #F9E4B7;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: black;
+    margin-top: 5px;
+}
+
+.subscribe input {
+    padding: 8px;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.subscribe button {
+    padding: 8px 12px;
+    background: #063852;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .impact {
+        padding: 30px;
+    }
+
+    .project {
+        padding: 20px;
+    }
+
+    .cta {
+        padding: 40px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+/* Contact Section */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px;
+    background: #FFF6E0;
+}
+
+.contact-info {
+    width: 45%;
+}
+
+.contact-info h1 {
+    font-size: 2.5rem;
+    color: #063852;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 15px 0;
+}
+
+.contact-details {
+    margin-top: 30px;
+}
+
+.contact-details p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 50%;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.send-btn {
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background: #FFB400;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .contact-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .form-group input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
