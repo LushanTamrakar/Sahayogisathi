@@ -1,9 +1,386 @@
-/* General Styles */
+/* General Reset */
 body {
-    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+}
+
+/* Header */
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fdf6e3; /* Light cream background */
+    padding: 15px 30px; /* Increased padding for better spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow for a modern look */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Logo Styling */
+header .logo {
+    font-size: 1.8rem; /* Slightly larger font size */
+    font-weight: bold;
+    color: #2b6777; /* Muted teal color for the logo */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header .logo:hover {
+    color: #1f4e5f; /* Darker teal on hover */
+}
+
+/* Navigation Menu */
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 15px; /* Use gap for cleaner spacing */
+}
+
+header nav ul li {
+    margin: 0; /* Removed unnecessary margin for consistency */
+}
+
+/* Navigation Links */
+header nav ul li a {
+    text-decoration: none;
+    color: #333; /* Neutral dark gray for links */
+    padding: 8px 15px; /* Increased padding for better clickability */
+    border-radius: 8px; /* Softer rounded corners */
+    font-size: 1rem; /* Standard font size */
+    transition: all 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background: #2b6777; /* Muted teal background on hover */
+    color: #fff; /* White text on hover */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Sign-Up Button */
+.signup-btn {
+    background: #52ab98; /* Fresh teal for the button */
+    color: #fff; /* White text */
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: none; /* Removed border for a clean look */
+    cursor: pointer;
+}
+
+.signup-btn:hover {
+    background: #e0e8e6; /* Darker teal on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow on hover */
+}
+
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: url('images/doanteforcause.JPG') no-repeat center center/cover;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background: #ffb400;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background: #d89000;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.about-content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-content .btn {
+    background: #5bbf91;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Projects Section */
+.projects {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Donations Breakdown Section */
+.donations {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.donations h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.donations .chart img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Call to Action Section */
+.cta {
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta .buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cta .buttons a {
+    background: #ffb400;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.cta .buttons a:hover {
+    background: #d89000;
+}
+
+/* Footer */
+/* Footer Styling */
+.footer {
+    background-color: #e4e1d5; /* Light beige background */
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure responsiveness */
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  
+  /* Logo Section */
+  .footer-logo {
+    flex: 1 1 200px; /* Flexible layout */
+  }
+  
+  .footer-logo .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000; /* Black text */
+  }
+  
+  .footer-logo .logo-subtitle {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  
+  /* Links Section */
+  .footer-links {
+    display: flex;
+    flex: 2 1 400px; /* Spread space across links */
+    justify-content: space-around;
+  }
+  
+  .footer-column h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-column ul li a {
+    text-decoration: none;
+    color: #333; /* Dark gray */
+    transition: color 0.3s;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #2b6777; /* Muted teal */
+  }
+  
+  /* Subscription Section */
+  .footer-subscribe {
+    flex: 1 1 300px; /* Ensure this section resizes */
+  }
+  
+  .footer-subscribe h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .footer-subscribe form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .footer-subscribe input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    font-size: 14px;
+  }
+  
+  .footer-subscribe button {
+    padding: 10px 20px;
+    background-color: #2b6777; /* Muted teal */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .footer-subscribe button:hover {
+    background-color: #418b7b; /* Darker teal */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  
+
+/* ABOUT CSS */
+/* General Reset */
+body {
+    background: url('images/background.svg');
+    background-size: cover;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
 /* Header */
@@ -11,78 +388,221 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #fbeec1;
-    padding: 15px 30px;
+    padding: 20px;
+    background: #f5f5f5;
 }
 
 header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #5bbf91;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+    background: #5bbf91;
+    color: #fff;
+}
+
+header nav ul li a.active {
+    background: #5bbf91;
+    color: #fff;
+}
+
+/* About Us Section */
+.about-us {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+
+.about-us .content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.about-us .content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-us .content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-us .image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-us .image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Community Section */
+.community {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    background: #fff;
+}
+
+.community .image {
+    flex: 1;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.community .image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.community .content {
+    flex: 1;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Call-to-Action Section */
+.cta {
+    padding: 50px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cta .btn {
+    background: #ffb400;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    transition: background 0.3s;
+}
+
+.cta .btn:hover {
+    background: #d89000;
+}
+
+/* Current Projects */
+.current-projects {
+    padding: 50px 20px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.project-box .btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.3s;
+}
+
+.project-box .btn:first-of-type {
+    background: #5bbf91;
+}
+
+.project-box .btn:last-of-type {
+    background: #ffb400;
+}
+
+.project-box .btn:hover {
+    opacity: 0.8;
+}
+/* Mission Section */
+.mission {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    background-color: #d8a056;
+}
+
+.mission-content {
+    display: flex;
+    align-items: center;
+}
+
+.mission-content img {
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+/* Call-to-Action Section */
+.call-to-action {
+    text-align: center;
+    padding: 60px;
+    background: url('cta-image.jpg') no-repeat center center/cover;
+    color: white;
+}
+
+.call-to-action h2 {
     font-size: 24px;
     font-weight: bold;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.signup-btn {
-    background: #114b5f;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 5px;
-}
-
-/* Hero Section */
-.hero {
-    text-align: center;
-    background: url('hero-image.jpg') no-repeat center/cover;
-    padding: 100px 20px;
-    color: white;
-}
-
-.hero h1 {
-    font-size: 36px;
-}
-
-.hero .btn {
-    background: #ff7f50;
-    color: white;
+.volunteer-btn, .donate-btn {
     padding: 10px 20px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-/* About Section */
-.about {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px;
-    background: #fff;
-}
-
-.about-content {
-    max-width: 50%;
-}
-
-.about-image img {
-    width: 100%;
-    border-radius: 10px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 /* Projects Section */
 .projects {
-    background: #e3f2fd;
-    padding: 50px;
     text-align: center;
+    padding: 40px;
 }
 
 .project-container {
@@ -92,265 +612,139 @@ nav ul li a {
 }
 
 .project-card {
-    background: white;
     padding: 20px;
+    background-color: #e5f4dc;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Donations Breakdown */
-.donations {
-    padding: 50px;
-    text-align: center;
-    background: #fff;
-}
-
-/* Current Projects */
-.current-projects {
-    padding: 50px;
-    background: #ffcc80;
-    text-align: center;
-}
-
-.project-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.project-box {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/* Footer */
-footer {
-    background: #114b5f;
-    color: white;
-    padding: 40px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.footer-links ul, .footer-connect ul {
-    list-style: none;
-}
-
-.footer-subscribe input {
-    padding: 10px;
-    width: 200px;
-    margin-right: 10px;
-}
-
-.footer-subscribe button {
-    background: #ff7f50;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
 }
 
 /* Mission Section */
-.mission-section {
-    background: #FAF3DC;
-    padding: 60px 5%;
-    display: flex;
-    align-items: center;
-    gap: 40px;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
 }
 
-.mission-text {
-    flex: 1;
-}
-
-.mission-text h2 {
-    font-size: 24px;
-    color: #2c2c2c;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
-
-.mission-text p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #4a4a4a;
-}
-
-.mission-image {
-    flex: 1;
-}
-
-.mission-image img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-/* Mission Goals */
-.mission-goals {
-    padding: 50px 5%;
-    background: #ffffff;
-    text-align: center;
-}
-
-.mission-goals h2 {
-    font-size: 26px;
-    margin-bottom: 30px;
-}
-
-.goals-container {
+header {
+    background: #fff;
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.goal-card {
-    flex: 1;
-    min-width: 280px;
-    background: #FAF3DC;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
+    align-items: center;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.goal-card h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.goal-card p {
-    font-size: 14px;
-    color: #4a4a4a;
-}
-
-/* Footer */
-footer {
-    background: #f8e9c4;
-    padding: 40px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.footer-container {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-.footer-logo h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #2c2c2c;
-}
-
-.footer-links {
-    display: flex;
-    justify-content: space-between;
-    gap: 60px;
-    flex: 1;
-}
-
-.footer-links div h3 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #2c2c2c;
-}
-
-.footer-links ul {
+nav ul {
     list-style: none;
-    padding: 0;
-}
-
-.footer-links ul li {
-    margin-bottom: 8px;
-}
-
-.footer-links ul li a {
-    text-decoration: none;
-    color: #2c2c2c;
-    font-size: 14px;
-}
-
-.footer-subscribe {
-    max-width: 300px;
-    flex: 1;
-}
-
-.footer-subscribe h3 {
-    font-size: 16px;
-    font-weight: bold;
-    color: #2c2c2c;
-    margin-bottom: 10px;
-}
-
-.footer-subscribe form {
     display: flex;
-    border: 1px solid #2c2c2c;
-    border-radius: 5px;
-    overflow: hidden;
+    gap: 15px;
 }
 
-.footer-subscribe input {
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.mission {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background: url('mission-bg.jpg') no-repeat center center/cover;
+}
+
+.mission-text {
+    width: 50%;
+    color: #333;
+}
+
+.mission-image {
+    width: 40%;
+    height: 300px;
+    background: url('mission-image.jpg') no-repeat center center/cover;
+}
+
+.mission-goals {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    background: #fff;
+}
+
+.goal {
     padding: 10px;
-    border: none;
-    flex: 1;
-    font-size: 14px;
+    background: #e0e0e0;
+    border-radius: 5px;
 }
 
-.footer-subscribe button {
-    background: #002b36;
+.projects {
+    text-align: center;
+    padding: 40px;
+    background: url('projects-bg.jpg') no-repeat center center/cover;
+}
+
+.project {
+    margin: 15px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border-radius: 10px;
+}
+
+.contribute {
+    text-align: center;
+    padding: 50px;
+    background: url('contribute-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+}
+
+.current-projects {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background: #fff;
+}
+
+.project-card {
+    background: #d1e7dd;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 40%;
+}
+
+.project-card h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+button.volunteer, button.donate {
+    background-color: #0d3b66;
     color: white;
-    padding: 10px 15px;
     border: none;
+    padding: 10px 15px;
+    margin: 5px;
     cursor: pointer;
-    font-size: 14px;
+    border-radius: 5px;
 }
 
-.footer-subscribe button:hover {
-    background: #005b75;
+button.volunteer:hover, button.donate:hover {
+    background-color: #145da0;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
+.footer {
+    padding: 30px;
+    background: url('footer-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
 }
-/* cameraroll */
+
+.subscribe input {
+    padding: 10px;
+    width: 200px;
+}
+
+/* cameraroll.css */
 /* Camera Roll Page Styles */
 .camera-roll {
     background: #A8C8C8;
@@ -364,22 +758,27 @@ footer {
     margin-bottom: 30px;
 }
 
+/* Fixing gallery layout */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Adjusted gap */
 }
 
 .gallery-item {
     background: white;
-    padding: 15px;
     border-radius: 8px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Prevents overflow issues */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gallery-item img {
     width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images take full space */
     border-radius: 8px;
 }
 
@@ -429,61 +828,6 @@ footer {
 
 .donate-btn:hover {
     background: #005b75;
-}
-
-/* Footer Styles */
-footer {
-    background: #FAEBC8;
-    padding: 40px 5%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.footer-links {
-    display: flex;
-    gap: 60px;
-}
-
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links ul li {
-    margin-bottom: 8px;
-}
-
-.footer-links ul li a {
-    text-decoration: none;
-    color: #2c2c2c;
-}
-
-.footer-subscribe form {
-    display: flex;
-    border: 1px solid #2c2c2c;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.footer-subscribe input {
-    padding: 10px;
-    flex: 1;
-    border: none;
-}
-
-.footer-subscribe button {
-    background: #002b36;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
 }
 /* Donate Section */
 .donate {
@@ -588,76 +932,6 @@ footer {
     background: #063852;
     color: white;
 }
-
-/* Footer */
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    background: #F9E4B7;
-}
-
-.footer-links {
-    display: flex;
-    gap: 50px;
-}
-
-.footer-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-column a {
-    text-decoration: none;
-    color: black;
-    margin-top: 5px;
-}
-
-.subscribe input {
-    padding: 8px;
-    margin-top: 10px;
-    width: 80%;
-}
-
-.subscribe button {
-    padding: 8px 12px;
-    background: #063852;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-top: 5px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .donate-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .donate-image img {
-        width: 100%;
-    }
-
-    .tabs {
-        flex-direction: column;
-    }
-
-    .buttons {
-        flex-direction: column;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        gap: 20px;
-    }
-}
 /* Impact Section */
 .impact {
     background: #ffffff;
@@ -727,75 +1001,6 @@ footer {
 .donate-btn {
     background: #063852;
     color: white;
-}
-
-/* Footer */
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-    background: #F9E4B7;
-}
-
-.footer-links {
-    display: flex;
-    gap: 50px;
-}
-
-.footer-column {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-column a {
-    text-decoration: none;
-    color: black;
-    margin-top: 5px;
-}
-
-.subscribe input {
-    padding: 8px;
-    margin-top: 10px;
-    width: 80%;
-}
-
-.subscribe button {
-    padding: 8px 12px;
-    background: #063852;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-top: 5px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .impact {
-        padding: 30px;
-    }
-
-    .project {
-        padding: 20px;
-    }
-
-    .cta {
-        padding: 40px;
-    }
-
-    .buttons {
-        flex-direction: column;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        gap: 20px;
-    }
 }
 /* Contact Section */
 .contact {

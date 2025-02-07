@@ -7,77 +7,116 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <header>
-        <a href="index.html" class="logo">sahayogi</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="mission.html">Mission</a></li>
-                <li><a href="cameraroll.html">Camera Roll</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="impact.html">Impact Statement</a></li>
-                <li><a href="connect.html">Connect</a></li>
-                <li><a href="signup.html" class="signup-btn">Sign Up</a></li>
-            </ul>
+    <header class="navbar">
+        <!-- Logo Section -->
+        <a href="index.html" class="logo">Sahayogi</a>
+        
+        <!-- Navigation Links -->
+        <nav class="nav-menu">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="mission.html">Mission</a></li>
+            <li><a href="cameraroll.html">Camera Roll</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="impact.html">Impact Statements</a></li>
+            <li><a href="connect.html">Connect</a></li>
+          </ul>
         </nav>
-    </header>
-
-    <section class="mission-section">
+        
+        <!-- Call-to-Action Button -->
+        <a href="signup.html" class="signup-btn">Sign Up</a>
+      </header>
+    
+    <section class="mission">
         <div class="mission-text">
-            <h2>What Our Mission Is</h2>
-            <p>We work to ensure every child has access to education and opportunities, tackling systemic inequalities.</p>
+            <h2>Our Mission</h2>
+            <p>Our mission is to ensure every child, regardless of financial hardships, gender, or caste, has access to education and opportunities to thrive...</p>
         </div>
-        <div class="mission-image">
-            <img src="mission.jpg" alt="Mission Image">
-        </div>
+        <div class="mission-image"></div>
     </section>
-
+    
     <section class="mission-goals">
-        <h2>Our Mission Goals</h2>
-        <div class="goals-container">
-            <div class="goal-card">
-                <h3>Take Discrimination</h3>
-                <p>Fighting against discrimination for a fairer society.</p>
-            </div>
-            <div class="goal-card">
-                <h3>Disaster Relief</h3>
-                <p>Responding swiftly to natural disasters.</p>
-            </div>
-        </div>
+        <div class="goal">Take Discrimination</div>
+        <div class="goal">Disaster Response and Relief</div>
+        <div class="goal">Universal Education Access</div>
+        <div class="goal">Community Rebuilding and Resilience</div>
+        <div class="goal">Empowering Marginalized Communities</div>
     </section>
-
-    <footer>
+    
+    <section class="projects">
+        <h3>Projects We Have Done</h3>
+        <div class="project" id="cloth-drive">Cloth Drive</div>
+        <div class="project" id="books-for-cause">Books for a Cause</div>
+        <div class="project" id="feed-homeless">Feed the Homeless</div>
+    </section>
+    
+    <section class="contribute">
+        <h2>You can contribute to provide a place for children with special needs!</h2>
+        <button>Join as a volunteer</button>
+        <button>Donate</button>
+    </section>
+    
+    <section class="current-projects">
+        <h3>Current Projects</h3>
+        <div class="project-card">
+            <h4>Handwashing Station at Bhaktapur School</h4>
+            <button class="volunteer">Volunteer</button>
+            <button class="donate">Donate</button>
+        </div>
+        <div class="project-card">
+            <h4>Reusable Sanitary Pad Distribution</h4>
+            <button class="volunteer">Volunteer</button>
+            <button class="donate">Donate</button>
+        </div>
+    </section> 
+    <footer class="footer">
         <div class="footer-container">
-            <div class="footer-logo"><h2>Sahayogi</h2></div>
-            <div class="footer-links">
-                <div>
-                    <h3>Home</h3>
-                    <ul>
-                        <li><a href="about.html">About us</a></li>
-                        <li><a href="mission.html">Mission</a></li>
-                        <li><a href="#">Donate</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Connect</h3>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                    </ul>
-                </div>
+          <!-- Logo Section -->
+          <div class="footer-logo">
+            <h2 class="logo">Sahayogi <span class="logo-subtitle">Saathi</span></h2>
+          </div>
+      
+          <!-- Links Section -->
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3>Home</h3>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Mission</a></li>
+                <li><a href="#">Camera Roll</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
             </div>
-            <div class="footer-subscribe">
-                <h3>Subscribe for updates</h3>
-                <form>
-                    <input type="email" placeholder="Your email">
-                    <button>Subscribe</button>
-                </form>
+            <div class="footer-column">
+              <h3>More</h3>
+              <ul>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Donate</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
             </div>
+            <div class="footer-column">
+              <h3>Connect</h3>
+              <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+      
+          <!-- Subscription Section -->
+          <div class="footer-subscribe">
+            <h3>Subscribe to get latest updates</h3>
+            <form>
+              <input type="email" placeholder="Your email" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
         </div>
     </footer>
-
 </body>
 </html>
-
