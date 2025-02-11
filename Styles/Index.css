@@ -1,0 +1,217 @@
+/* Navbar */
+.navbar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* put space between logo & nav items/CTA */
+    gap: 271px;
+    /* only if you actually want a big gap */
+    padding: 18px 110px;
+    isolation: isolate;
+
+    /* Instead of a fixed width/height, let it be auto or 100% wide */
+    width: 100%;
+    min-height: 103px;
+
+    /* Figma colors/effects */
+    background: #FBF5DD;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+    /* optional, might not be fully supported */
+}
+
+/* Example: If you have a .navbar .logo or .nav-links, style those accordingly */
+.navbar .logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #16404D;
+}
+
+.logo-img {
+    /* Instead of absolute positioning, let it size normally within its container */
+    display: inline-block;
+    width: 133px;
+    /* or a responsive value like max-width: 133px; */
+    height: 67px;
+    /* or auto if you’re using an <img> tag */
+    background: url("Untitled_design-removebg-preview.png") no-repeat center/contain;
+    /* If you want the background to scale, use background-size: contain or cover */
+
+    /* If this image sits within a flex container and you want it in a certain order: */
+    flex: none;
+    /* prevents the flex item from growing/shrinking */
+    order: 4;
+    /* if you want it to appear last among siblings */
+    z-index: 4;
+    /* only needed if overlapping other elements */
+}
+
+.nav-links {
+    display: flex;
+    /* horizontal layout */
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    /* space between individual nav items */
+    padding: 16px 20px;
+    /* optional padding around the links */
+
+
+}
+
+.nav-links li {
+    list-style: none;
+    /* remove default bullet points */
+}
+
+.nav-links li a {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: #525560;
+    /* from Figma’s secondary text */
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #16404D;
+    /* hover color */
+}
+
+.hero {
+    /* Remove absolute positioning and fixed dimensions */
+    position: relative;
+    padding-top: 90px;
+    width: 100%;
+    min-height: 600px;
+    /* or whatever height you prefer */
+
+
+    background: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.6)), url("/images/doanteforcause.JPG") center/cover no-repeat;
+
+    /* Provide some padding for breathing room */
+    padding: 80px 20px;
+
+    /* Use flex or block to center or position content as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* or center */
+    justify-content: center;
+
+}
+
+/* Optional: fine-tune hero text and button styling */
+.hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    /* or another color if you use a darker background */
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+
+.hero .btn {
+    padding: 16px 32px;
+    background: #A6CDC6;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #16404D;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #16404D;
+    color: #FBF5DD;
+}
+.about {
+    /* Let the section expand to full width but max at 1680px if desired */
+    width: 100%;
+    max-width: 1680px;    /* optional, matching Figma's "top row" width */
+    margin: 0 auto;       /* centers the section horizontally if parent is wider */
+    min-height: 639px;    /* optional - replicate Figma's height, or remove */
+  
+    /* Use flex to position .about-content and .about-image side by side */
+    display: flex;
+    flex-wrap: wrap;      /* allows wrapping if screen is too narrow */
+    align-items: center;  /* vertically center items in row */
+    justify-content: space-between;
+    gap: 40px;            /* space between content & image */
+  
+    /* Some padding for breathing room */
+    padding: 60px 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Left side text block */
+  .about-content {
+    flex: 1 1 400px;         /* grows/shrinks but 400px minimum width */
+    max-width: 700px;        /* or another suitable limit */
+  }
+  
+  .about-content h2 {
+    font-family: 'Poppins', sans-serif;  /* or your chosen font */
+    font-size: 32px;                     /* adjust as needed */
+    font-weight: 700;
+    color: #16404D;                      /* from your palette */
+    margin-bottom: 16px;
+  }
+  
+  .about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #525560;  /* slightly darker color from your palette */
+    margin-bottom: 16px;
+  }
+  
+  .about-content .btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 5px;
+    background: #DDA853;
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+  
+  .about-content .btn:hover {
+    background: #16404D;
+    color: #FBF5DD;
+  }
+  
+  /* Right side image block */
+  .about-image {
+    flex: 1 1 400px;         /* or just flex: 1; if you want it to share space equally */
+    max-width: 700px;        /* cap the image container size */
+    display: flex;
+    justify-content: center; /* horizontally center the <img> inside */
+    align-items: center;     /* vertically center if there's extra space */
+  }
+  
+  .about-image img {
+    width: 100%;       /* responsive image scales to the parent container */
+    height: auto;      /* maintain aspect ratio */
+    border-radius: 120px; /* if you want slight rounding */
+    display: block;
+  }
